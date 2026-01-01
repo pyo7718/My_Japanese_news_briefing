@@ -85,7 +85,7 @@ def main():
         title_ko = translate_text(entry.title)
         summary_ko = translate_text(clean_html(entry.summary)[:150])
         
-        web_trans_link = f"https://translate.google.com/translate?sl=ja&tl=ko&hl=ko&u={quote(entry.link)}&client=webapp"
+        web_trans_link = f"https://translate.google.com/translate?sl=ja&tl=ko&u={quote(entry.link)}&_x_tr_sl=ja&_x_tr_tl=ko&_x_tr_hl=ko"        
         
         full_message += f"<b>{i+1}. {html.escape(title_ko)}</b>\n"
         full_message += f"📝 {html.escape(summary_ko)}...\n"
